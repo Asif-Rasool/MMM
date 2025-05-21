@@ -16,8 +16,6 @@ with col2:
     st.markdown("---")
     st.header("3. Exploratory Data Analysis (EDA)")
 
-    ### 2.2. Exploratory Data Analysis (EDA)
-
     st.markdown("""
     Our initial analysis focuses on understanding how sales vary across different types of businesses and levels of competition. This helps us begin to address our two key questions:  
     (1) how marketing campaigns impact sales, and  
