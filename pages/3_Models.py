@@ -21,7 +21,7 @@ with col2:
 
     We begin with a linear regression model to establish a baseline. This model provides interpretable estimates of how each campaign input contributes to revenue outcomes. It is particularly useful in answering the first objective by quantifying marginal effects in a straightforward way.
 
-    We then move to tree-based models, such as random forest and gradient boosting. These models allow for more complex relationships between variables, including non-linearities and interactions, which are likely present in real-world campaign behavior. They also provide a stronger basis for examining whether strategy effectiveness varies by business type.
+    We then move to Machine Learning (ML) model, such as Random Forest. ML models allow for more complex relationships between variables, including non-linearities and interactions, which are likely present in real-world campaign behavior. They also provide a stronger basis for examining whether strategy effectiveness varies by business type.
 
     Model performance will be assessed using standard regression metrics, including R-squared, root mean squared error (RMSE), and mean absolute error (MAE).
     """)

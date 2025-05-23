@@ -1,0 +1,62 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       Amount_Collected   R-squared:                       0.084
+Model:                            OLS   Adj. R-squared:                 -0.007
+Method:                 Least Squares   F-statistic:                    0.9176
+Date:                Fri, 23 May 2025   Prob (F-statistic):              0.546
+Time:                        11:34:43   Log-Likelihood:                -2893.0
+No. Observations:                 167   AIC:                             5818.
+Df Residuals:                     151   BIC:                             5868.
+Df Model:                          15                                         
+Covariance Type:            nonrobust                                         
+=================================================================================================
+                                    coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+Intercept                      7.774e+06   9.63e+05      8.071      0.000    5.87e+06    9.68e+06
+Campaign_Email                -1511.8008    187.306     -8.071      0.000   -1881.879   -1141.723
+Campaign_Flyer                    1.4464      3.283      0.441      0.660      -5.041       7.934
+Campaign_Phone                -1159.4482    143.651     -8.071      0.000   -1443.273    -875.624
+Facebook                       -341.6867     42.333     -8.071      0.000    -425.329    -258.044
+Instagram                         0.5396      0.403      1.340      0.182      -0.256       1.335
+YouTube                          -0.7176      0.967     -0.742      0.459      -2.628       1.193
+TikTok                           11.0132     29.895      0.368      0.713     -48.053      70.079
+LinkedIn                        -13.6378      1.690     -8.071      0.000     -16.976     -10.299
+Campaign_Email:Campaign_Flyer   -43.7275      5.418     -8.071      0.000     -54.432     -33.023
+Campaign_Email:Campaign_Phone   158.6101     19.651      8.071      0.000     119.783     197.437
+Campaign_Email:Facebook          62.7328      7.772      8.071      0.000      47.376      78.089
+Campaign_Email:Instagram         15.8252      1.961      8.071      0.000      11.951      19.699
+Campaign_Email:YouTube            0.0012      0.000      8.165      0.000       0.001       0.001
+Campaign_Email:TikTok          -440.0544     54.521     -8.071      0.000    -547.777    -332.332
+Campaign_Email:LinkedIn          -1.5528      0.192     -8.071      0.000      -1.933      -1.173
+Campaign_Flyer:Campaign_Phone     0.0011      0.000      8.071      0.000       0.001       0.001
+Campaign_Flyer:Facebook                0          0        nan        nan           0           0
+Campaign_Flyer:Instagram      -5.115e-07    1.4e-06     -0.366      0.715   -3.28e-06    2.25e-06
+Campaign_Flyer:YouTube        -3.911e-07   1.42e-06     -0.275      0.783    -3.2e-06    2.42e-06
+Campaign_Flyer:TikTok            29.2394      3.623      8.071      0.000      22.082      36.397
+Campaign_Flyer:LinkedIn          51.6326      6.397      8.071      0.000      38.993      64.272
+Campaign_Phone:Facebook                0          0        nan        nan           0           0
+Campaign_Phone:Instagram               0          0        nan        nan           0           0
+Campaign_Phone:YouTube                 0          0        nan        nan           0           0
+Campaign_Phone:TikTok                  0          0        nan        nan           0           0
+Campaign_Phone:LinkedIn                0          0        nan        nan           0           0
+Facebook:Instagram                0.0001   1.93e-05      7.633      0.000       0.000       0.000
+Facebook:YouTube                  0.6948      0.086      8.072      0.000       0.525       0.865
+Facebook:TikTok                  -2.0838      0.258     -8.071      0.000      -2.594      -1.574
+Facebook:LinkedIn                      0          0        nan        nan           0           0
+Instagram:YouTube              2.049e-07   3.71e-07      0.553      0.581   -5.28e-07    9.38e-07
+Instagram:TikTok              -5.679e-06   8.44e-06     -0.673      0.502   -2.24e-05     1.1e-05
+Instagram:LinkedIn              -54.7069      6.778     -8.071      0.000     -68.099     -41.315
+YouTube:TikTok                -7.009e-05      0.000     -0.595      0.553      -0.000       0.000
+YouTube:LinkedIn                 10.9414      1.356      8.071      0.000       8.263      13.620
+TikTok:LinkedIn                  12.2919      1.523      8.071      0.000       9.283      15.301
+==============================================================================
+Omnibus:                      153.542   Durbin-Watson:                   0.715
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             2444.551
+Skew:                           3.405   Prob(JB):                         0.00
+Kurtosis:                      20.463   Cond. No.                     1.18e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.18e+16. This might indicate that there are
+strong multicollinearity or other numerical problems.
