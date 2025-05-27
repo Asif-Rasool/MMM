@@ -1,0 +1,12 @@
+Variable,Coefficient (Impact),P-Value,Client Type
+TikTok,17.1176422,3.69E-10,Large Facility 
+Facebook,6.645855825,0.016348657,Large Facility 
+Instagram,2.903804286,3.58E-14,Large Facility 
+Campaign_Flyer,2.160852819,0.010907557,Large Facility 
+Campaign_Flyer:Facebook,0.00000352,0.003653903,Large Facility 
+Facebook:YouTube,0.00000309,0.021309073,Large Facility 
+Instagram:YouTube,0.000000666,0.0000001,Large Facility 
+Campaign_Email:Campaign_Flyer,-0.000000896,0.042394499,Large Facility 
+Campaign_Flyer:Campaign_Phone,-0.00000283,0.013454662,Large Facility 
+,,,
+,,,
