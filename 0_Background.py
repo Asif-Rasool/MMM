@@ -1,6 +1,6 @@
 import streamlit as st
 
-import streamlit as st
+
 
 st.set_page_config(
     page_title="Background",
@@ -14,10 +14,22 @@ st.set_page_config(
 )
 
 
+
+
 # ── 3‑COL LAYOUT ──
 col1, col2, col3 = st.columns([1, 6, 1])
 with col2:
-    st.title("Signals and Sales: Modeling Social Media ROI for Northshore Businesses (prototype version)")
+    
+    GITHUB_URL = "https://github.com/Asif-Rasool/MMM"
+    GITHUB_ICON = (
+        f'<a href="{GITHUB_URL}" target="_blank">'
+        f'<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" '
+        f'width="30" style="float:right; margin-top:10px;" />'
+        f'</a>'
+    )
+    st.markdown(GITHUB_ICON, unsafe_allow_html=True)
+
+    st.title("Signals and Sales: Modeling Incremental Revenue Impact of Marketing Channels (prototype version)")
     with st.expander("About", expanded=False):
 
 # Author Info

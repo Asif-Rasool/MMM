@@ -11,8 +11,21 @@ st.set_page_config(
           }
 )
 
+
+
+
 col1, col2, col3 = st.columns([1, 6, 1])
 with col2:
+
+  GITHUB_URL = "https://github.com/Asif-Rasool/MMM"
+  GITHUB_ICON = (
+      f'<a href="{GITHUB_URL}" target="_blank">'
+      f'<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" '
+      f'width="30" style="float:right; margin-top:10px;" />'
+      f'</a>'
+  )
+  st.markdown(GITHUB_ICON, unsafe_allow_html=True)
+
   st.markdown("---")
   st.header("2. Data")
   

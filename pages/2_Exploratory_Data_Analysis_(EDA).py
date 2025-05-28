@@ -11,8 +11,21 @@ st.set_page_config(
           }
 )
 
+
+
 col1, col2, col3 = st.columns([1, 6, 1])
 with col2:
+    
+    GITHUB_URL = "https://github.com/Asif-Rasool/MMM"
+    GITHUB_ICON = (
+        f'<a href="{GITHUB_URL}" target="_blank">'
+        f'<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" '
+        f'width="30" style="float:right; margin-top:10px;" />'
+        f'</a>'
+    )
+    st.markdown(GITHUB_ICON, unsafe_allow_html=True)
+
+    
     st.markdown("---")
     st.header("3. Exploratory Data Analysis (EDA)")
 
@@ -25,7 +38,7 @@ with col2:
     st.subheader("3.1. Distribution Analysis")
     st.subheader("3.1.1. Distribution by Client Type")
     st.markdown("""
-    The dataset is dominated by **Large Facilities**, which make up about 46% of all records. **Small Facilities** follow at 28%, while **Medium** and **Private Facilities** represent smaller shares at 17% and 9%, respectively. This distribution informs how representative our insights will be across different segments (see **Figure 2**).
+    The dataset is dominated by Large Facilities, which make up about 46% of all records. **Small Facilities** follow at 28%, while Medium and Private Facilities represent smaller shares at 17% and 9%, respectively. This distribution informs how representative our insights will be across different segments (see **Figure 2**).
     """)
     st.image("Figures/client_type_distribution.png", width=320)
     st.caption("**Figure 2:** Proportion of records by Client Type based on normalized value counts.")
