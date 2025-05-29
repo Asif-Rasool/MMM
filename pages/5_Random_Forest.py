@@ -16,15 +16,26 @@ st.set_page_config(
 )
 col1, col2, col3 = st.columns([1, 6, 1])
 with col2:
-
     GITHUB_URL = "https://github.com/Asif-Rasool/MMM"
-    GITHUB_ICON = (
-        f'<a href="{GITHUB_URL}" target="_blank">'
-        f'<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" '
-        f'width="30" style="float:right; margin-top:10px;" />'
-        f'</a>'
-    )
-    st.markdown(GITHUB_ICON, unsafe_allow_html=True)
+    COLAB_URL  = "https://colab.research.google.com/github/Asif-Rasool/MMM/blob/main/main.ipynb"
+
+    HEADER_ICONS = f"""
+    <div style="float:right; margin:10px 0; display:flex; align-items:center; gap:8px;">
+        <a href="{COLAB_URL}" target="_blank">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg"
+            width="80"
+            style="vertical-align:middle;" />
+        </a>
+        <span style="font-size:18px; line-height:1; color:#666;">|</span>
+        <a href="{GITHUB_URL}" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            width="30"
+            style="vertical-align:middle;" />
+        </a>
+    </div>
+    """
+
+    st.markdown(HEADER_ICONS, unsafe_allow_html=True)
 
     st.markdown("---")
     st.header("5. Random Forest")

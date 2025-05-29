@@ -3,8 +3,8 @@
 Dep. Variable:       Amount_Collected   R-squared:                       0.402
 Model:                            OLS   Adj. R-squared:                  0.378
 Method:                 Least Squares   F-statistic:                     16.56
-Date:                Tue, 27 May 2025   Prob (F-statistic):           9.01e-74
-Time:                        08:28:21   Log-Likelihood:                -16466.
+Date:                Thu, 29 May 2025   Prob (F-statistic):           9.01e-74
+Time:                        10:45:45   Log-Likelihood:                -16466.
 No. Observations:                 897   AIC:                         3.300e+04
 Df Residuals:                     861   BIC:                         3.318e+04
 Df Model:                          35                                         
