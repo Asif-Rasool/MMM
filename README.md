@@ -1,6 +1,8 @@
 # Signals and Sales: Modeling Incremental Revenue Impact of Marketing Channels (Prototype Version)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Asif-Rasool/MMM/blob/main/main.ipynb)
+
 
 **Developer:** Asif Rasool, Ph.D.
 Business Research Center, College of Business
