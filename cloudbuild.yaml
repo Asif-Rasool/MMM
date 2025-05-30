@@ -13,6 +13,6 @@ steps:
           --region=us-central1 \
           --allow-unauthenticated \
           --update-secrets=/workspace/.streamlit/config.toml=marketing-app-config:latest \
-          --update-secrets=/home/cnb/.streamlit/secrets.toml=marketing-app-secrets:latest
+          --update-secrets=/workspace/.streamlit/secrets.toml=marketing-app-secrets:latest
 
 timeout: 1200s

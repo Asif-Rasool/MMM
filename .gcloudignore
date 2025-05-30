@@ -1,0 +1,17 @@
+# copy of .dockerignore
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.streamlit/local/
+.env
+.venv/
+env/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.git/

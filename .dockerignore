@@ -1,0 +1,28 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Distribution/build folders
+*.egg-info/
+build/
+dist/
+
+# Streamlit local state
+.streamlit/local/
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Git metadata
+.git/
