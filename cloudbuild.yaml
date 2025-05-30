@@ -50,8 +50,3 @@ substitutions:
 
 timeout: 1200s
 
-# Substitutions for flexibility
-substitutions:
-  _SERVICE_NAME: mmm-app
-  _REGION: us-central1
-  _PROJECT_ID: eia-livingston-southeastern
