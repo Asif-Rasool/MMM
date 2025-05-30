@@ -4,23 +4,28 @@ FROM python:3.11.9-slim
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies
+# Install system dependencies including gcc for some Python packages
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
     software-properties-common \
     git \
+    gcc \
+    g++ \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install Python dependencies
+# Copy requirements first for better Docker layer caching
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY . .
 
-# Create .streamlit directory
-RUN mkdir -p /app/.streamlit
+# Create .streamlit directories for secret mounting
+RUN mkdir -p /app/.streamlit /workspace/.streamlit /home/cnb/.streamlit
 
 # Expose port
 EXPOSE 8501
