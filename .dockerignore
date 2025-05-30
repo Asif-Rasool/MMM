@@ -1,28 +1,54 @@
-# Python cache files
+# Python
 __pycache__/
 *.py[cod]
-
-# Distribution/build folders
-*.egg-info/
+*$py.class
+*.so
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Streamlit local state
-.streamlit/local/
-
-# Environment files
-.env
-.venv/
-env/
+# Virtual environments
 venv/
+env/
+ENV/
 
-# IDE/editor folders
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS artifacts
+# OS
 .DS_Store
 Thumbs.db
 
-# Git metadata
+# Git
 .git/
+.gitignore
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Documentation
+README.md
+*.md
+
+# CI/CD (keep cloudbuild.yaml though)
+.github/
