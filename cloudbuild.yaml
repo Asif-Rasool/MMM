@@ -34,7 +34,7 @@ steps:
       - --timeout=3600
       - --max-instances=10
       - --set-env-vars=STREAMLIT_SERVER_PORT=8501,STREAMLIT_SERVER_ADDRESS=0.0.0.0
-      - --update-secrets=/app/.streamlit/config.toml=marketing-app-config:latest
+      - --update-env-vars=MARKETING_CONFIG=marketing-app-config:latest
       - --update-secrets=/app/.streamlit/secrets.toml=marketing-app-secrets:latest
 
 timeout: 1200s
