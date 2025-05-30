@@ -1,0 +1,18 @@
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        gcloud run deploy mmm-app \
+          --project=eia-livingston-southeastern \
+          --source=. \
+          --region=us-central1 \
+          --allow-unauthenticated \
+          --update-secrets=/workspace/.streamlit/config.toml=marketing-app-config:latest \
+          --update-secrets=/home/cnb/.streamlit/secrets.toml=marketing-app-secrets:latest
+
+timeout: 1200s
