@@ -18,13 +18,7 @@ steps:
       - push
       - gcr.io/${_PROJECT_ID}/${_SERVICE_NAME}:$BUILD_ID
 
-  # Step 3: Push latest tag
-  - name: gcr.io/cloud-builders/docker
-    args:
-      - push
-      - gcr.io/${_PROJECT_ID}/${_SERVICE_NAME}:latest
-
-  # Step 4: Deploy to Cloud Run with secrets
+  # Step 3: Deploy to Cloud Run
   - name: gcr.io/cloud-builders/gcloud
     args:
       - run
@@ -42,10 +36,7 @@ steps:
       - --concurrency=80
       - --cpu-boost
       - --set-env-vars=STREAMLIT_SERVER_PORT=8501,STREAMLIT_SERVER_ADDRESS=0.0.0.0
-      # Mount config.toml to .streamlit directory (keep existing)
-      - --set-secrets=/app/.streamlit/config.toml=mmm-marketing-config:latest
-      # Mount secrets.toml to a different directory to avoid conflict
-      - --set-secrets=/app/secrets/secrets.toml=mmm-marketing-secrets:latest
+      - --set-secrets=/workspace/.streamlit/config.toml=mmm-marketing-config:latest,/home/cnb/.streamlit/secrets.toml=mmm-marketing-secrets:latest
 
 timeout: 1200s
 
